@@ -6,18 +6,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddCourseComponent } from './add-course/add-course.component';
+import { ViewAllCourseComponent } from './view-all-course/view-all-course.component';
 
 const link:Routes = [
   {
     path:"",component:AddCourseComponent
   },
+  {
+    path:"viewall",component:ViewAllCourseComponent
+  }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddCourseComponent
+    AddCourseComponent,
+    ViewAllCourseComponent
   ],
   imports: [
     BrowserModule,
