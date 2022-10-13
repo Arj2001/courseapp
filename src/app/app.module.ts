@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { ViewAllCourseComponent } from './view-all-course/view-all-course.component';
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from '@angular/forms';
 
 const link:Routes = [
   {
@@ -29,7 +30,8 @@ const link:Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(link),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule //two method to read value from form "template-driven" and "reactive-forms"
   ],
   providers: [],
   bootstrap: [AppComponent]
