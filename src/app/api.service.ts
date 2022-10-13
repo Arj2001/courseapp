@@ -11,4 +11,9 @@ export class ApiService {
   apiCall=()=>{
     return  this.courseSite.get("http://mylinkurcodesapp.herokuapp.com/getcourses")
   }
+
+  addCourse=(data :any)=>{
+    return this.courseSite.post("https://mylinkurcodesapp.herokuapp.com/addcourse",data)
+  }
+
 }
